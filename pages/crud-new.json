@@ -52,16 +52,49 @@
             {
               "type": "condition-builder",
               "label": "条件组件",
-              "builderMode": "simple",
               "showANDOR": true,
               "name": "ruleLogicGraph",
-              "description": "<font color=\"#990000\">根据条件，后台自动生成代码逻辑</font>",
+              "description": "<font color=\"#990000\">tips:</font></br></br><font color=\"#990000\">1、生成方法支持3个string和long参数，入参名即为string1,string2,string3,long1,long2,long3</font></br></br><font color=\"#990000\">2、字符串匹配处填正则表达式</font>",
               "required": true,
               "fields": [
                 {
-                  "label": "文本",
+                  "label": "string1",
                   "type": "text",
-                  "name": "text"
+                  "name": "string1"
+                },
+                {
+                  "label": "string2",
+                  "type": "text",
+                  "name": "string2"
+                },
+                {
+                  "label": "string3",
+                  "type": "text",
+                  "name": "string3"
+                },
+                {
+                  "label": "long1",
+                  "type": "number",
+                  "name": "long1",
+                  "minimum": 1,
+                  "maximum": 9223372036854775807,
+                  "step": 1
+                },
+                {
+                  "label": "long2",
+                  "type": "number",
+                  "name": "long2",
+                  "minimum": 1,
+                  "maximum": 9223372036854775807,
+                  "step": 1
+                },
+                {
+                  "label": "long3",
+                  "type": "number",
+                  "name": "long3",
+                  "minimum": 1,
+                  "maximum": 9223372036854775807,
+                  "step": 1
                 }
               ],
               "visibleOn": "this.ruleType==20",
